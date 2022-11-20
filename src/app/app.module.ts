@@ -11,6 +11,12 @@ import { ListproduitComponent } from './components/listproduit/listproduit.compo
 import { NewproductComponent } from './components/newproduct/newproduct.component';
 import { PromoproductComponent } from './components/promoproduct/promoproduct.component';
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { MarqueComponent } from './components/marque/marque.component';
+import { OnglesComponent } from './components/ongles/ongles.component';
+import { LevresComponent } from './components/levres/levres.component';
+import { YeuxComponent } from './components/yeux/yeux.component';
+import { SoinComponent } from './components/soin/soin.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +29,12 @@ import { BestsellerComponent } from './components/bestseller/bestseller.componen
     NewproductComponent,
     PromoproductComponent,
     BestsellerComponent,
+    MenuComponent,
+    MarqueComponent,
+    OnglesComponent,
+    LevresComponent,
+    YeuxComponent,
+    SoinComponent,
     
   ],
   imports: [
