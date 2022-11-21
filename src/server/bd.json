@@ -1,0 +1,172 @@
+{
+    "produits": [
+      {
+        "id": 1,
+        "nom": "MASCARA - GO Big XXL Volume WP",
+        "photo": "assets/produits/catrice/mascara1.png",
+        "date_fabrication": 2022,
+        "date_fin":2023,
+        "marque":"catrice",
+        "promo":false,
+        "type":"mascara",
+        "prix":18.9
+
+      },
+      {
+        "id": 2,
+        "nom": "MASCARA - GO Big XXL Volume",
+        "photo": "assets/produits/catrice/mascara2.png",
+        "date_fabrication": 2022,
+        "date_fin":2023,
+        "marque":"catrice",
+        "promo":false,
+        "type":"mascara",
+        "prix":18.9
+    },
+    {
+        "id": 3,
+        "nom": "Palette Collection Beige",
+        "photo": "assets/produits/catrice/palette.png",
+        "date_fabrication": 2022,
+        "date_fin":2023,
+        "marque":"catrice",
+        "promo":true,
+        "type":"palette" ,
+        "prix":20.900
+    },
+    {
+        "id": 4,
+        "nom": "Rouge à lévres - Vegan collagen Matt Lipstick",
+        "photo": "assets/produits/catrice/rouge1.png",
+        "date_fabrication": 2022,
+        "date_fin":2023,
+        "marque":"catrice",
+        "promo":true,
+        "type":"Rouge à lévres" ,
+        "prix":18.9
+    },
+    {
+      "id": 5,
+      "nom": "Mascara I Love Extreme - crazy volume waterproof",
+      "photo": "assets/produits/essence/mascara1.png",
+      "date_fabrication": 2022,
+      "date_fin":2023,
+      "marque":"essence",
+      "promo":false,
+      "type":"mascara" ,
+      "prix":13.9
+  },
+  {
+    "id": 6,
+    "nom": "Mascara I Love Extreme - crazy volume ",
+    "photo": "assets/produits/essence/mascara2.png",
+    "date_fabrication": 2022,
+    "date_fin":2023,
+    "marque":"essence",
+    "promo":false,
+    "type":"mascara" ,
+    "prix":13.9
+},
+{
+  "id": 7,
+  "nom": "Poudre compacte mattifiante",
+  "photo": "assets/produits/essence/poudre.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"essence",
+  "promo":false,
+  "type":"poudre" ,
+  "prix":16.9
+},
+{
+  "id": 8,
+  "nom": "Rouge à lévres - hydra matte",
+  "photo": "assets/produits/essence/rouge2.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"essence",
+  "promo":false,
+  "type":"Rouge à lévres" ,
+  "prix":11.9
+},
+{
+  "id": 9,
+  "nom": "Rouge à lévres changeant - Electric glow",
+  "photo": "assets/produits/essence/rouge1.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"essence",
+  "promo":false,
+  "type":"Rouge à lévres" ,
+  "prix":15.9
+},
+{
+  "id": 10,
+  "nom": "Blush - Palette Fard à Joue Ultra Blush",
+  "photo": "assets/produits/essence/blush.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"revolution",
+  "promo":false,
+  "type":"palette" ,
+  "prix":39.9
+},
+{
+  "id": 11,
+  "nom": "Concealar- Conceal and Define",
+  "photo": "assets/produits/essence/concealar.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"revolution",
+  "promo":false,
+  "type":"concealar" ,
+  "prix":20.9
+},
+{
+  "id": 12,
+  "nom": "Palette Fards à Paupiére - Chocolate",
+  "photo": "assets/produits/essence/palette.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"revolution",
+  "promo":false,
+  "type":"palette" ,
+  "prix":42.9
+},
+{
+  "id": 13,
+  "nom": "Blush - Palette Fards à Paupiére - Love",
+  "photo": "assets/produits/essence/palette2.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"revolution",
+  "promo":false,
+  "type":"palette" ,
+  "prix":44.9
+},
+{
+  "id": 14,
+  "nom": "Crème - Hydraliane",
+  "photo": "assets/produits/svr/creme.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"svr",
+  "promo":true,
+  "type":"creme" ,
+  "prix":46
+},
+{
+  "id": 15,
+  "nom": "Gel - Physiopure",
+  "photo": "assets/produits/svr/gel.png",
+  "date_fabrication": 2022,
+  "date_fin":2023,
+  "marque":"svr",
+  "promo":true,
+  "type":"gel" ,
+  "prix":37
+}
+
+
+]
+}

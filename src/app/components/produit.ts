@@ -7,6 +7,7 @@ export class Produit {constructor(
    public marque :string,
    public type :string,
    public promo : boolean ,
-    public comments:Commentaire[]){}
+   public prix:number
+    ){}
    
 }
