@@ -13,10 +13,8 @@ import { PromoproductComponent } from './components/promoproduct/promoproduct.co
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { MarqueComponent } from './components/marque/marque.component';
-import { OnglesComponent } from './components/ongles/ongles.component';
-import { LevresComponent } from './components/levres/levres.component';
-import { YeuxComponent } from './components/yeux/yeux.component';
-import { SoinComponent } from './components/soin/soin.component';
+import { AcceuilComponent } from './components/acceuil/acceuil.component';
+
 
 @NgModule({
   declarations: [
@@ -31,11 +29,7 @@ import { SoinComponent } from './components/soin/soin.component';
     BestsellerComponent,
     MenuComponent,
     MarqueComponent,
-    OnglesComponent,
-    LevresComponent,
-    YeuxComponent,
-    SoinComponent,
-    
+    AcceuilComponent,
   ],
   imports: [
     BrowserModule,
