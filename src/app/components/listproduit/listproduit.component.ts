@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { ProduitService } from 'src/app/produit.service';
+import { Produit } from '../produit';
 
 @Component({
   selector: 'app-listproduit',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./listproduit.component.css']
 })
 export class ListproduitComponent implements OnInit {
-
-  constructor() { }
+  lesProduits!:Produit[];
+  constructor(private fb:FormBuilder,
+  private produitService:ProduitService) { }
+  
+  
 
   ngOnInit(): void {
+   this.produitService.getProduits()
+ .subscribe (data => this.lesProduits = data)
+ }
   }
 
-}
+
