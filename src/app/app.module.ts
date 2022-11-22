@@ -14,28 +14,31 @@ import { BestsellerComponent } from './components/bestseller/bestseller.componen
 import { MenuComponent } from './components/menu/menu.component';
 import { MarqueComponent } from './components/marque/marque.component';
 import { AcceuilComponent } from './components/acceuil/acceuil.component';
+import { HeadersarraComponent } from "./components/headersarra/headersarra.component";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    ListchoixetrechComponent,
-    ProduitComponent,
-    ListproduitComponent,
-    NewproductComponent,
-    PromoproductComponent,
-    BestsellerComponent,
-    MenuComponent,
-    MarqueComponent,
-    AcceuilComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        ListchoixetrechComponent,
+        ProduitComponent,
+        ListproduitComponent,
+        NewproductComponent,
+        PromoproductComponent,
+        BestsellerComponent,
+        MenuComponent,
+        MarqueComponent,
+        AcceuilComponent,
+        HeadersarraComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        
+    ]
 })
 export class AppModule { }
