@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ListchoixetrechComponent } from './components/listchoixetrech/listchoixetrech.component';
+
 import { ProduitComponent } from './components/produit/produit.component';
 import { ListproduitComponent } from './components/listproduit/listproduit.component';
 import { NewproductComponent } from './components/newproduct/newproduct.component';
@@ -14,6 +14,10 @@ import { BestsellerComponent } from './components/bestseller/bestseller.componen
 import { MenuComponent } from './components/menu/menu.component';
 import { MarqueComponent } from './components/marque/marque.component';
 import { AcceuilComponent } from './components/acceuil/acceuil.component';
+import { HeadersarraComponent } from './components/headersarra/headersarra.component';
+import {HttpClientModule} from "@angular/common/http";
+import { Error404Component } from './components/error404/error404.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms'
 
 
 @NgModule({
@@ -21,7 +25,7 @@ import { AcceuilComponent } from './components/acceuil/acceuil.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ListchoixetrechComponent,
+   
     ProduitComponent,
     ListproduitComponent,
     NewproductComponent,
@@ -30,10 +34,16 @@ import { AcceuilComponent } from './components/acceuil/acceuil.component';
     MenuComponent,
     MarqueComponent,
     AcceuilComponent,
+    HeadersarraComponent,
+    Error404Component,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
