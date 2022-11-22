@@ -2,6 +2,7 @@ export class Produit {constructor(
     public id:number,
     public nom:string, 
    public photo : string,
+   public photoMarque : string,
    public  date_fabrication : Date,
    public date_fin : Date ,
    public marque :string,
