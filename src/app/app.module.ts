@@ -15,6 +15,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { MarqueComponent } from './components/marque/marque.component';
 import { AcceuilComponent } from './components/acceuil/acceuil.component';
 import { HeadersarraComponent } from "./components/headersarra/headersarra.component";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { HeadersarraComponent } from "./components/headersarra/headersarra.compo
     imports: [
         BrowserModule,
         AppRoutingModule,
+        HttpClientModule,
         
     ]
 })
