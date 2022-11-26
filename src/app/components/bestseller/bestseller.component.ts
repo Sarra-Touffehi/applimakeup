@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProduitService } from 'src/app/produit.service';
+import { Produit } from '../produit';
 
 @Component({
   selector: 'app-bestseller',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bestseller.component.css']
 })
 export class BestsellerComponent implements OnInit {
-
-  constructor() { }
+  lesProduits!:Produit[];
+  constructor(private produitService:ProduitService) { }
 
   ngOnInit(): void {
+    this.produitService.getProduits().subscribe (data => this.lesProduits = data)
+
+  }
+
+  productFilter(lesProduits:Produit[],bestS :boolean){
+    const a= lesProduits.filter(data=>data.bestS==bestS);
+    return a;
+
   }
 
 }

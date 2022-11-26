@@ -10,7 +10,13 @@ const URL = 'http://localhost:3000/produits';
 export class ProduitService {
 
   constructor(private http:HttpClient) { }
+  
   getProduits():Observable<Produit[]>{
     return this.http.get<Produit[]>(URL);
+    }
+
+
+    getProduitById(id:number):Observable<Produit>{
+      return this.http.get<Produit>(URL + "/" +id);
     }
 }

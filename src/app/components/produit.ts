@@ -8,7 +8,9 @@ export class Produit {constructor(
    public marque :string,
    public type :string,
    public promo : boolean ,
-   public prix:number
+   public prix:number,
+   public nouveau:boolean,
+   public bestS:boolean
     ){}
    
 }
