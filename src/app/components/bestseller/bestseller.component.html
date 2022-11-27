@@ -1,13 +1,14 @@
-<body>
+
+  <body>
     
 
-  <h1>MEILLEURES VENTES</h1>
-  <div class="gallery">
-   
-    <ul *ngFor="let p of productFilter(lesProduits,true)" >
-      <li><app-listproduitchild [pro]="p" ></app-listproduitchild></li>
-    </ul>
+    <h1>MEILLEURES VENTES</h1>
+    <div class="gallery">
+       
+        <ul *ngFor="let p of productFilter(lesProduits,true)" >
+          <li><app-listproduitchild [pro]="p" ></app-listproduitchild></li>
+        </ul>
+        
     
-
-  </div>
-  </body>
+      </div>
+    </body>
