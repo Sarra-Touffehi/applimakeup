@@ -386,5 +386,14 @@
 
     }
 
+],
+"users": [
+  {
+    "username": "ADMIN",
+    "password": 123456,
+    "roles": [
+      "ADMIN"
+    ]
+  }
 ]
 }

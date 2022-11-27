@@ -8,7 +8,6 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { ProduitComponent } from './components/produit/produit.component';
 import { ListproduitComponent } from './components/listproduit/listproduit.component';
-import { NewproductComponent } from './components/newproduct/newproduct.component';
 import { PromoproductComponent } from './components/promoproduct/promoproduct.component';
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -19,6 +18,8 @@ import { HeadersarraComponent } from './components/headersarra/headersarra.compo
 import {HttpClientModule} from "@angular/common/http";
 import { Error404Component } from './components/error404/error404.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { PanierComponent } from './components/panier/panier.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -29,7 +30,6 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
    
     ProduitComponent,
     ListproduitComponent,
-    NewproductComponent,
     PromoproductComponent,
     BestsellerComponent,
     MenuComponent,
@@ -37,6 +37,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     AcceuilComponent,
     HeadersarraComponent,
     Error404Component,
+    PanierComponent,
+    LoginComponent,
     
   ],
   imports: [
@@ -51,31 +53,6 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
-
-@NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-       
-        ProduitComponent,
-        ListproduitComponent,
-        NewproductComponent,
-        PromoproductComponent,
-        BestsellerComponent,
-        MenuComponent,
-        MarqueComponent,
-        AcceuilComponent,
-        HeadersarraComponent
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HttpClientModule,
-        
-    ]
 
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 
-
+<!--
 <section class="container sproduct my-5 pt-5">
     <div class="rows mt-5">
         <div class="col-lg-5 col-md-12 col-12">
@@ -9,9 +9,9 @@
         </div>
 
         <div class="col-lg-6 col-md-12 col-12">
-            <h6>{{produits.type}}</h6>
+            <h4>{{produits.type}}</h4>
             <h1>{{produits.nom}}</h1>
-            <h2>{{produits.prix}} <sup>DT</sup> </h2>
+            <h2 style="font-weight:bold;">{{produits.prix}} <sup>DT</sup> </h2>
 
             <input type="number" value="1">
 
@@ -23,4 +23,31 @@
 
     </div>
 
-</section>
+</section> -->
+
+<table class="table" class="container" style="margin-top: 30px;text-align: center;">
+    <tbody>
+        <tr>
+            <td>
+                <img [src]="produits.photo" >
+            </td>
+            <td style="background-color: #fdeff5; text-align: center;">
+                
+                    <h4 style="font-weight:bold;">Brand : {{produits.marque}}</h4>
+                    <h1>{{produits.nom}}</h1>
+                    <h2 style="font-weight:bold; color: #ff9f43;">{{produits.prix| number:".3"}} <sup>DT</sup> </h2>
+                    <h4>Availability : In Stock</h4>
+                    Quantity : 
+                    <input type="number" value="1" width="20px">
+        
+                    <button type="button" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
+                        Ajouter au panier</button>
+                        
+                        
+        
+        
+               
+            </td>
+        </tr>
+    </tbody>
+</table>

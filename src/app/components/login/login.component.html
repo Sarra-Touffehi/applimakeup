@@ -1,0 +1,29 @@
+<body>
+    
+
+<div class="container">
+    <div class="alert alert-danger" *ngIf="error==1">
+        <strong>Login out Mot de Passe erronés</strong>
+      </div>
+<form [formGroup]="f">
+    <div class="form-icon">
+<i class="fa fa-user"></i>
+    </div>
+    <h3 class="title">Login</h3>
+    <div>
+        <input class="form-control" type="text" placeholder="UserName" formControlName="username" required>
+        <div *ngIf="validate_username()" class="alert alert-danger" >
+            Username obligatoire
+            </div> 
+    </div>
+   
+    <div>
+    <input class="form-control" type="password" placeholder="Password" formControlName="password" required>
+    <div *ngIf="validate_password()" class="alert alert-danger" >
+        Password obligatoire
+        </div>
+</div>
+    <button type="button" class="btn" >Login</button>
+</form>
+</div>
+</body>

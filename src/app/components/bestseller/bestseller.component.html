@@ -1,50 +1,50 @@
 <body>
     
 
-    <h1>MEILLEURES VENTES</h1>
-    <section class="gallery">
-       
-        <ul *ngFor="let a of productFilter(lesProduits,true)"  class="content">
-       
-            
-            <li class="product-top"><a [routerLink]="['/listproduit',a.id]"><img [src]="a.photo"/></a>
-                
-                
-        <div class="overlay">
-        
-               
-                <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
-            </div>   
-            </li>
-        
-                <li>
-        
-                
-                  <h3> {{a.marque}}</h3>
-         <h3> {{a.nom}}</h3>
-        </li>
-        <li>
-        <h6>   {{a.prix}}<sup>TND</sup> </h6> 
-        
-        
+  <h1>MEILLEURES VENTES</h1>
+  <section class="gallery">
+     
+      <ul *ngFor="let a of productFilter(lesProduits,true)"  class="content">
+     
+          
+          <li class="product-top"><a [routerLink]="['/listproduit',a.id]"><img [src]="a.photo"/></a>
+              
+              
+      <div class="overlay">
+      
+             
+              <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          </div>   
           </li>
-        <li>
-          <ul class="ul">
-            <li class="li"><i class="fa fa-star checked"></i></li>
-            <li class="li"><i class="fa fa-star checked"></i></li>
-            <li class="li"><i class="fa fa-star checked"></i></li>
-            <li class="li"><i class="fa fa-star checked"></i></li>
-            <li class="li"><i class="fa fa-star"></i></li>
-          </ul>
+      
+              <li>
+      
+              
+                <h3> {{a.marque}}</h3>
+       <h3> {{a.nom}}</h3>
+      </li>
+      <li>
+      <h6>   {{a.prix}}<sup>TND</sup> </h6> 
+      
+      
         </li>
-        
-       
-        
-          <button type="button" class="buy-1" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
-              Ajouter au panier</button> 
-           
+      <li>
+        <ul class="ul">
+          <li class="li"><i class="fa fa-star checked"></i></li>
+          <li class="li"><i class="fa fa-star checked"></i></li>
+          <li class="li"><i class="fa fa-star checked"></i></li>
+          <li class="li"><i class="fa fa-star checked"></i></li>
+          <li class="li"><i class="fa fa-star checked"></i></li>
         </ul>
-        
-    
-        </section>
-    </body>
+      </li>
+      
+     
+      
+        <button type="button" class="buy-1" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
+            Ajouter au panier</button> 
+         
+      </ul>
+      
+  
+      </section>
+  </body>

@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Marque } from 'src/app/marque';
+import { Marque } from 'src/app/classe/marque';
 import { MarqueService } from 'src/app/marque.service';
 
 
-import { Produit } from '../produit';
+import { Produit } from '../../classe/produit';
 
 
 @Component({

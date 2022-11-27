@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthentificationService } from 'src/app/authentification.service';
+import { Produit } from 'src/app/classe/produit';
+import { ProduitService } from 'src/app/produit.service';
 
 @Component({
   selector: 'app-headersarra',
@@ -6,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./headersarra.component.css']
 })
 export class HeadersarraComponent implements OnInit {
+  lesProduits:Produit[]=[];
 
-  constructor() { }
+  constructor(private produitService:ProduitService,private router:Router,public login:AuthentificationService) { }
 
   ngOnInit(): void {
+    this.produitService.getProduits().subscribe (data => this.lesProduits = data)
   }
+
+
 
 }
