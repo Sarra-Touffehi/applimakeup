@@ -1,51 +1,12 @@
 
 <body>
-  <section>
+ 
 <h1>NOS PRODUITS </h1>
 <section class="gallery">
-  
-<ul *ngFor="let p of  lesProduits" class="content">
-    <div >
-    <li class="product-top"><a [routerLink]="['/listproduit',p.id]"><img [src]="p.photo"/></a>
-        
-        
-<div class="overlay">
+  <ul >
+    <li *ngFor="let p of  lesProduits" class="content">
+    <app-listproduitchild [pro]="p"></app-listproduitchild></li>
 
-       
-        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
-    </div>   
-    </li>
-
-        <li>
-
-        
-          <h3> {{p.marque}}</h3>
- <h3> {{p.nom}}</h3>
-</li>
-<li>
-<h6>   {{p.prix}}<sup>TND</sup> </h6> 
-
-
-  </li>
-<li>
-  <ul class="ul">
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-  </ul>
-</li>
-
-</div>
-
-
-  <button type="button" class="buy-1" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
-      Ajouter au panier</button> 
-  
 </ul>
-
-
-</section>
 </section>
 </body>
