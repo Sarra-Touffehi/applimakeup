@@ -1,38 +1,36 @@
 <div>
-<ul>
-    <li class="product-top"><a [routerLink]="['/listproduit',pro.id]"><img [src]="pro.photo"/></a>
+<div class="content">
+    <div class="product-top"><a [routerLink]="['/listproduit',pro.id]"><img [src]="pro.photo"/></a>
 <div class="overlay">
+<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+</div>   
+  </div>
 
-
-       
-        <button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
-    </div>   
-    </li>
-
-        <li>
-
-        
-          <h3> {{pro.marque}}</h3>
+        <div>
+ <h3> {{pro.marque}}</h3>
  <h3> {{pro.nom}}</h3>
-</li>
-<li>
-<h6>   {{pro.prix}}<sup>TND</sup> </h6> 
+ 
+<h6> {{pro.prix}}<sup>TND</sup> </h6> 
+ 
 
-
-  </li>
-<li>
+         </div>
+<div>
   <ul class="ul">
     <li class="li"><i class="fa fa-star checked"></i></li>
     <li class="li"><i class="fa fa-star checked"></i></li>
     <li class="li"><i class="fa fa-star checked"></i></li>
     <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star"></i></li>
+    <li class="li"><i class="fa fa-star checked"></i></li>
   </ul>
-</li>
-</ul>
-
 </div>
 
+
+
+<div>
   <button type="button" class="buy-1" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
       Ajouter au panier</button> 
+
+    </div>
+  </div>
+</div>
     

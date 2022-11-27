@@ -17,8 +17,8 @@ export class BestsellerComponent implements OnInit {
   }
 
   productFilter(lesProduits:Produit[],bestS :boolean){
-    const a= lesProduits.filter(data=>data.bestS==bestS);
-    return a;
+    const p= lesProduits.filter(data=>data.bestS==bestS);
+    return p;
 
   }
 

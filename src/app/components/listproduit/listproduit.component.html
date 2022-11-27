@@ -1,12 +1,10 @@
 
 <body>
- 
 <h1>NOS PRODUITS </h1>
-<section class="gallery">
-  <ul >
-    <li *ngFor="let p of  lesProduits" class="content">
-    <app-listproduitchild [pro]="p"></app-listproduitchild></li>
+<div  class="gallery">
+  <ul *ngFor="let p of  lesProduits" >
+    <li><app-listproduitchild [pro]="p" ></app-listproduitchild></li>
 
 </ul>
-</section>
-</body>
+</div>
+</body> 

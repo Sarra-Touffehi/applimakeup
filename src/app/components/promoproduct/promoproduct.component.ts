@@ -17,8 +17,8 @@ export class PromoproductComponent implements OnInit {
 
 
   productFilter(lesProduits:Produit[],promo :boolean){
-    const a= lesProduits.filter(data=>data.promo==promo);
-    return a;
+    const p= lesProduits.filter(data=>data.promo==promo);
+    return p;
 
   }
 

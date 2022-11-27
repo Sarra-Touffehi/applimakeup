@@ -20,6 +20,7 @@ import { Error404Component } from './components/error404/error404.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PanierComponent } from './components/panier/panier.component';
 import { LoginComponent } from './components/login/login.component';
+import { ListproduitchildComponent } from './components/listproduitchild/listproduitchild.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { LoginComponent } from './components/login/login.component';
     Error404Component,
     PanierComponent,
     LoginComponent,
+    ListproduitchildComponent,
     
   ],
   imports: [
