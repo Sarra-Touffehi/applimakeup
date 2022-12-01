@@ -21,6 +21,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PanierComponent } from './components/panier/panier.component';
 import { LoginComponent } from './components/login/login.component';
 import { ListproduitchildComponent } from './components/listproduitchild/listproduitchild.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { ListproduitchildComponent } from './components/listproduitchild/listpro
     PanierComponent,
     LoginComponent,
     ListproduitchildComponent,
+
     
   ],
   imports: [
@@ -49,6 +52,7 @@ import { ListproduitchildComponent } from './components/listproduitchild/listpro
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

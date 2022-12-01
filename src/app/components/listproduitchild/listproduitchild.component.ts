@@ -14,5 +14,5 @@ export class ListproduitchildComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  aaaaa:number=5;
 }

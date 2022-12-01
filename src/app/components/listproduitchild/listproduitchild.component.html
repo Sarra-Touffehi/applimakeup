@@ -13,15 +13,11 @@
 <h6> {{pro.prix}}<sup>TND</sup> </h6>    
  
 
-         </div>
+         </div
+         >
 <div>
-  <ul class="ul">
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-    <li class="li"><i class="fa fa-star checked"></i></li>
-  </ul>
+  <ngb-rating [max]="5" [(rate)]="pro.stars" [readonly]="true"></ngb-rating>
+
 </div>
 
 

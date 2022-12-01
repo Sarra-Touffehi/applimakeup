@@ -19,4 +19,17 @@ export class ProduitService {
     getProduitById(id:number):Observable<Produit>{
       return this.http.get<Produit>(URL + "/" +id);
     }
+
+    addProduit(p:Produit):Observable<Produit>{
+      return this.http.post<Produit>(URL, p);
+      }
+
+   // commenter(s:string):Observable<string>{
+   //   return this.http.post<string>(URL,s);
+   // }
+    addCom(s:string):Observable<string>{
+      return this.http.post<string>(URL , s);
+      }
+
+
 }
