@@ -44,7 +44,7 @@ style=" color: #000;">
 </section> -->
 
 
-<section class="home" id="home">
+<section class="home" >
 
   
   <div class="video-container">
@@ -59,7 +59,22 @@ style=" color: #000;">
   </div>
   </section>
 
-<app-footer></app-footer>
+
+  <section style="background-color: beige; ">
+    <h1>NOUVEAUX PRODUITS</h1>
+    <div class="gallery">
+       
+      <ul *ngFor="let p of productFilter(lesProduits,true)" >
+        <li><app-listproduitchild [pro]="p" ></app-listproduitchild></li>
+      </ul>
+      
+  
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+
+
 
 
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Marque } from 'src/app/classe/marque';
 import { MarqueService } from 'src/app/marque.service';
@@ -16,7 +17,7 @@ export class MarqueComponent implements OnInit {
  marques!:Marque[];
  produits!:Produit[];
 
- constructor(private marqueService : MarqueService) { }
+ constructor(private marqueService : MarqueService,private router:Router) { }
 
   ngOnInit(): void {
 
@@ -24,10 +25,10 @@ export class MarqueComponent implements OnInit {
 
   }
 
-  productFilter(produits:Produit[],marque :string){
-    const a= produits.filter(data=>data.marque==marque);
-    return a;
+  Marque()
+{ this.router.navigate(['/detailsmarque']); }
 
-  }
+
+ 
 
 }

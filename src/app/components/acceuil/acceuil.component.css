@@ -1,39 +1,3 @@
-#slider{
-    margin-top: 60px;
-}
-
-#slider .item {
-    height: 400px;
-}
-
-#slide1{
-    background: url('../../../assets/acc.png') center no-repeat;
-}
-
-#slide2{
-    background: url('../../../assets/acc2.png') center no-repeat;
-}
-
-#slide3{
-    background: url('../../../assets/acc3.png') center no-repeat;
-}
-
-#slide4{
-    background: url('../../../assets/acc4.png') center no-repeat;
-}
-
-#slide5{
-    background: url('../../../assets/acc5.png') center no-repeat;
-}
-
-.carousel-caption{
-    font-size: 18px;
-}
-
-
-
-
-
 
 section{
     padding:2rem 9%;
@@ -41,8 +5,9 @@ section{
     height: 100%;
 }
 .home{
+    background-color: black;
     position: relative;
-    height:90vh ;
+    height:100vh ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +50,34 @@ app-footer{
     position: relative;
     top: 130px;
 }
+
    
+
+
+.gallery{
+    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    flex-wrap: wrap;
+
+}
+
+
+
+h1{
+    text-align: center;
+      margin: 0;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+
+
+
+ul{list-style: none;}
 
 
 

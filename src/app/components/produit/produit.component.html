@@ -58,7 +58,7 @@
               <form [formGroup]="productForm">
 
                 <input type="text" placeholder="Ecrivez un commentaire ..." class="form-control form-control-lg" formControlName="comm" /> 
-                <button class="btn btn-warning" (click)="ajouterCommentaire(produits.id)" >ajouter</button>
+                <button class="btn btn-warning" (click)="ajouterCommentaire(produits.id)" >Ajouter</button>
                 <div> 
                     <i class="fa-regular fa-comment-dots"></i>
                      <div class="form-control"  > {{produits.commentaire|json}} </div>
