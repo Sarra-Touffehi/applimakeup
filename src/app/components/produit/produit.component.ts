@@ -23,7 +23,7 @@ produits!:Produit;
 
 
   AjouterAuPanier(id:number){
-   // this.produitService.addProduit(this.id).subscribe (data => console.log(data));
+    //this.produitService.addProduit().subscribe (data => console.log(data));
 
 
   }
