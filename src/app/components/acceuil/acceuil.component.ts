@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Produit } from 'src/app/classe/produit';
-import { ProduitService } from 'src/app/produit.service';
+import { ProduitService } from 'src/app/service/produit.service';
 
 
 @Component({

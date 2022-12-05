@@ -10,11 +10,18 @@
  <h3> {{pro.marque}}</h3>
  <h3> {{pro.nom}}</h3>
  
-<h6> {{pro.prix}}<sup>TND</sup> </h6>    
+ <div *ngIf="pro.promo ;else pasPromo " class="h4"> 
+  {{pro.prix*(0.8) | number:'3.2'}} <sup>TND</sup>
+  <span><s>{{pro.prix}}</s> <sup>TND</sup>  </span>
+ </div>
+ 
+    
+<ng-template #pasPromo>
+<div class="h4">{{pro.prix}}<sup>TND</sup></div>
+</ng-template>
  
 
-         </div
-         >
+         </div>
 <div>
   <ngb-rating [max]="5" [(rate)]="pro.stars" [readonly]="true"></ngb-rating>
 
@@ -23,7 +30,7 @@
 
 
 <div>
-  <button type="button" class="buy-1" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
+  <button type="button" class="buy-1" class="btn btn-dark" (click)="ajouterAuPanier()"> <i class="fa-solid fa-cart-shopping"></i>
       Ajouter au panier</button> 
 
     </div>

@@ -253,7 +253,7 @@
       "prix": 6.9,
       "nouveau": false,
       "bestS": false,
-      "stars": 4
+      "stars": 3
     },
     {
       "id": 18,
@@ -407,5 +407,8 @@
         "ADMIN"
       ]
     }
+  ],
+  "commandes":[
+
   ]
 }

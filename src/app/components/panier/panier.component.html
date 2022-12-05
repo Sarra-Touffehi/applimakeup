@@ -1,1 +1,39 @@
 
+
+<table class="table" >
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Photo</th>
+        <th scope="col">Article</th>
+        <th scope="col">Quantité</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Supprimer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of produitsPanier,index  as i">
+        <th scope="row">{{i+1}}</th>
+        <td><img [src]="p.produit.photo"/></td>
+        <td>{{p.produit.nom}}</td>
+        <td>{{p.qte}}</td>
+        <td> <div *ngIf="p.produit.promo; else pasPromo ">
+          {{p.produit.prix*(0.8) | number:'3.2'}} <sup>TND</sup>
+         </div>  
+<ng-template #pasPromo>
+  <div>{{p.produit.prix}}<sup>TND</sup></div>
+  </ng-template>
+        
+        </td>
+        <td><button type="button" (click)="supprimerPanier(i)"> <i class="fa fa-trash" aria-hidden="true"></i>
+        </button></td>
+      </tr>
+      <tr>
+        <td colspan="5">Total <span>(TVA incluse)</span>  : <div>{{calculer()}}</div>  </td>
+        <td colspan="1">
+          <button type="button" class="btn btn-warning" (click)="onAjouter()">Passer Commande</button>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>

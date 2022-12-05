@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ProduitService } from 'src/app/produit.service';
+import { PanierService } from 'src/app/service/panier.service';
+import { ProduitService } from 'src/app/service/produit.service';
 import { Produit } from '../../classe/produit';
 
 @Component({
@@ -19,7 +20,7 @@ produits!:Produit;
   p:Produit[]=[];
 
 
-  constructor(private activatedRoute:ActivatedRoute ,private produitService:ProduitService,private fb:FormBuilder,private router:Router) { }
+  constructor(private activatedRoute:ActivatedRoute ,private produitService:ProduitService,private fb:FormBuilder,private router:Router,private panierService:PanierService) { }
 
 
   AjouterAuPanier(id:number){
@@ -54,6 +55,10 @@ produits!:Produit;
       
 
       }
+
+      ajouterAuPanier(qte:string){
+        this.panierService.ajouterPanier(this.produits,Number(qte));
+          }
   }
 
 

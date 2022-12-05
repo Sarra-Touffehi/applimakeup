@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Produit } from 'src/app/classe/produit';
+import { PanierService } from 'src/app/service/panier.service';
 
 
 @Component({
@@ -10,13 +11,12 @@ import { Produit } from 'src/app/classe/produit';
 export class ListproduitchildComponent implements OnInit {
  lesProduits!:Produit[];
 @Input() pro!:Produit;
-  constructor() { }
+  constructor(private panierService:PanierService) { }
 
   ngOnInit(): void {
   }
-  aaaaa:number=5;
 
-  ajouterPanier(id:number){
-
+  ajouterAuPanier(){
+this.panierService.ajouterPanier(this.pro,1);
   }
 }

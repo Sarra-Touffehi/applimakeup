@@ -41,8 +41,8 @@ img{
    
 }
 
-h6{
-    font-size: 26px;
+.h4{
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     color: black;
@@ -118,5 +118,11 @@ transition: 0.5s;
 }
 .li{
     padding-top: 5px;
+}
+
+span{
+    font-size: 13px;
+    font-weight: lighter;
+    color: red;
 }
 

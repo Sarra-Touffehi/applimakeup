@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { Marque } from 'src/app/classe/marque';
-import { MarqueService } from 'src/app/marque.service';
+import { MarqueService } from 'src/app/service/marque.service';
 
 
 import { Produit } from '../../classe/produit';

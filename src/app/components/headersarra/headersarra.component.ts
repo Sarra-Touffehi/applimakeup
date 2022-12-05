@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthentificationService } from 'src/app/authentification.service';
+import { AuthentificationService } from 'src/app/service/authentification.service';
 import { Produit } from 'src/app/classe/produit';
-import { ProduitService } from 'src/app/produit.service';
+import { ProduitService } from 'src/app/service/produit.service';
 
 @Component({
   selector: 'app-headersarra',
