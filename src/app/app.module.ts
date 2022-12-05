@@ -21,6 +21,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PanierComponent } from './components/panier/panier.component';
 import { LoginComponent } from './components/login/login.component';
 import { ListproduitchildComponent } from './components/listproduitchild/listproduitchild.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { ListproduitchildComponent } from './components/listproduitchild/listpro
     PanierComponent,
     LoginComponent,
     ListproduitchildComponent,
+    AdminComponent,
     
   ],
   imports: [
