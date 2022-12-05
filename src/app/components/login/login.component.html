@@ -5,7 +5,7 @@
     <div class="alert alert-danger" *ngIf="error==1">
         <strong>Login out Mot de Passe erronés</strong>
       </div>
-<form [formGroup]="f">
+<form [formGroup]="f" (onSubmit)="onSubmit()">
     <div class="form-icon">
 <i class="fa fa-user"></i>
     </div>
@@ -23,7 +23,7 @@
         Password obligatoire
         </div>
 </div>
-    <button type="button" class="btn" >Login</button>
+    <button type="button"  type="submit"class="btn" >Login</button>
 </form>
 </div>
 </body>

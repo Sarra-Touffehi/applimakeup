@@ -9,21 +9,14 @@ const URL="http://localhost:3000/users"
   providedIn: 'root'
 })
 export class AuthentificationService {
+  valide:boolean=false;
   role: any;
+  constructor(private router :Router,private http: HttpClient) { }
  
-  
-
-
-
-  constructor(private router :Router,private http: HttpClient) { 
-  
-  }
-
-  getProduit():Observable<User[]>{
-    return this.http.get<User[]>(URL);
-    }
-
-   
+    
+    getUsers(user:string,pass:string):Observable<User[]>{
+      return this.http.get<User[]>(URL+'?username='+user+'&password='+pass);
+    }//requete envoi un tableau des users ayant ce user et mdp
 
     
 

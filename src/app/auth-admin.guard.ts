@@ -14,12 +14,15 @@ export class AuthAdminGuard implements CanActivate {
       route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
   
-  let role=this.auth.role;
-  if(role=='ADMIN')
-  return true;
-  else{this.router.navigate(['/login']);
-  return false;} 
-   
+ 
+  let valid = this.auth.valide;
+  if(valid){
+    return true;
+  }
+  else{
+    this.router.navigate(['/login']);
+    return false;
+  }
   }
   
 }

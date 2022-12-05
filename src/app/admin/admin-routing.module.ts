@@ -4,7 +4,7 @@ import { AuthAdminGuard } from '../auth-admin.guard';
 import { AdminComponent } from '../components/admin/admin.component';
 
 const routes: Routes = [
-  {path:'ADMIN', component:AdminComponent,
+  {path:'admin', component:AdminComponent,
   canActivate:[AuthAdminGuard],
 }
 ];
