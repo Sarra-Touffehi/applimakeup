@@ -40,12 +40,31 @@
                     Quantity : 
                     <input type="number" value="1" width="20px">
         
-                    <button type="button" class="btn btn-dark"> <i class="fa-solid fa-cart-shopping"></i>
+                    <button type="button" class="btn btn-dark" (click)="AjouterAuPanier(produits.id)"> <i class="fa-solid fa-cart-shopping"></i>
                         Ajouter au panier</button>
                         
+                      
                         
         
         
+               
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <div class="com">
+                    <h2 style="font-weight: bold;"> Avis</h2>
+              <form [formGroup]="productForm">
+
+                <input type="text" placeholder="Ecrivez un commentaire ..." class="form-control form-control-lg" formControlName="comm" /> 
+                <button class="btn btn-warning" (click)="ajouterCommentaire(produits.id)" >Ajouter</button>
+                <div> 
+                    <i class="fa-regular fa-comment-dots"></i>
+                     <div class="form-control"  > {{produits.commentaire|json}} </div>
+                   </div>
+              </form>
+                </div>
                
             </td>
         </tr>

@@ -50,18 +50,18 @@ h6{
 }
 
 
-.fa{
-    font-size: 15px;
+ngb-rating{
+    font-size: 25px;
     transition: .4s;
     margin: 3px;
   
 }
 
-.checked{
+ngb-rating{
     color: #ff9f43;
 }
 
-.fa:hover{
+ngb-rating:hover{
     transform: scale(1.3);
     transition: .6s;
 }

@@ -9,6 +9,7 @@ const URL="http://localhost:3000/users"
   providedIn: 'root'
 })
 export class AuthentificationService {
+  role: any;
  
   
 

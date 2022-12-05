@@ -1,3 +1,5 @@
+import { Commentaire } from "./commentaire";
+
 export class Produit {constructor(
     public id:number,
     public nom:string, 
@@ -10,7 +12,10 @@ export class Produit {constructor(
    public promo : boolean ,
    public prix:number,
    public nouveau:boolean,
-   public bestS:boolean
+   public bestS:boolean,
+   public stars:number,
+   public  commentaire?:string[]
+   
     ){}
    
 }

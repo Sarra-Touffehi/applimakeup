@@ -8,11 +8,15 @@ import { Produit } from 'src/app/classe/produit';
   styleUrls: ['./listproduitchild.component.css']
 })
 export class ListproduitchildComponent implements OnInit {
- // lesProduits!:Produit[];
+ lesProduits!:Produit[];
 @Input() pro!:Produit;
   constructor() { }
 
   ngOnInit(): void {
   }
+  aaaaa:number=5;
 
+  ajouterPanier(id:number){
+
+  }
 }

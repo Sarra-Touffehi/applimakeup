@@ -18,6 +18,8 @@ export class ListproduitComponent implements OnInit {
   ngOnInit(): void {
    this.produitService.getProduits().subscribe (data => this.lesProduits = data)
  }
+
+
   }
 
 

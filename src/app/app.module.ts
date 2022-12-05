@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { ProduitComponent } from './components/produit/produit.component';
@@ -21,13 +20,16 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PanierComponent } from './components/panier/panier.component';
 import { LoginComponent } from './components/login/login.component';
 import { ListproduitchildComponent } from './components/listproduitchild/listproduitchild.component';
+
 import { AdminComponent } from './components/admin/admin.component';
+
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
     FooterComponent,
    
     ProduitComponent,
@@ -42,7 +44,11 @@ import { AdminComponent } from './components/admin/admin.component';
     PanierComponent,
     LoginComponent,
     ListproduitchildComponent,
+
     AdminComponent,
+
+
+
     
   ],
   imports: [
@@ -51,6 +57,7 @@ import { AdminComponent } from './components/admin/admin.component';
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
+   // NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
