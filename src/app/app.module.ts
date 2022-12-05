@@ -22,6 +22,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ListproduitchildComponent } from './components/listproduitchild/listproduitchild.component';
 
 import { AdminComponent } from './components/admin/admin.component';
+import { EtoilenomPipe } from './etoilenom.pipe';
 
 //import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -46,6 +47,7 @@ import { AdminComponent } from './components/admin/admin.component';
     ListproduitchildComponent,
 
     AdminComponent,
+      EtoilenomPipe,
 
 
 
