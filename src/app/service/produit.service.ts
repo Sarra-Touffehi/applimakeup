@@ -23,6 +23,11 @@ export class ProduitService {
     addProduit(p:Produit):Observable<Produit>{
       return this.http.post<Produit>(URL, p);
       }
+      deleteProduit(id:number){
+        return this.http.delete(URL+"/"+id);     }
+     updateProduit (id:number,p:Produit):Observable<Produit>{
+          return this.http.put<Produit>(`${URL}/${id}`,p);
+        }
 
    // commenter(s:string):Observable<string>{
    //   return this.http.post<string>(URL,s);

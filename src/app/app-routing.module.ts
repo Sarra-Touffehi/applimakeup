@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AcceuilComponent } from './components/acceuil/acceuil.component';
+import { AdminComponent } from './components/admin/admin.component';
 import { BestsellerComponent } from './components/bestseller/bestseller.component';
 import { Error404Component } from './components/error404/error404.component';
 import { ListproduitComponent } from './components/listproduit/listproduit.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
 {path:'login', component:LoginComponent},
 {path:'panier', component:PanierComponent},
 {path:'listproduit/:id',title:'Produit choisi', component:ProduitComponent},
+{path:'admin',title:'Admin',component:AdminComponent},
 {path:'', redirectTo:'acceuil', pathMatch:'full'},
 {path:'**', title:'Erreur',component:Error404Component}
 

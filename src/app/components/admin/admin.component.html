@@ -1,0 +1,27 @@
+<div class="container">
+    <h3>Ajout d'un produit</h3>
+    <form [formGroup]="form" (ngSubmit)="onAjouter()" >
+        <label>Donnez l'id du produit</label>
+        <input class="form-control" type="number" formControlName="id"> <br>
+        <label> Donnez le nom du produit</label>
+        <input class="form-control" type="text" formControlName="nom"> <br>
+
+
+        <label>Donnez la date de fabriquation</label>
+        <input class="form-control" type="date" formControlName="date_fabrication"> <br>
+        <label>Donnez la date de délai </label>
+        <input class="form-control" type="date" formControlName="date_fin"> <br>
+        <label> Donnez la marque du produit</label>
+        <input class="form-control" type="text" formControlName="marque"> <br>
+        <label> Donnez le type du produit</label>
+        <input class="form-control" type="text" formControlName="type"> <br>
+        <label> Donnez le prix du produit</label>
+        <input class="form-control"  type="number" formControlName="prix">
+        <label> Donnez le nombre de stars du produit</label>
+        <input class="form-control"  type="number" formControlName="stars">
+        <button type=" submit" class= "btn btn-primary" >Ajouter Produit</button>
+        <input type="reset" class="btn btn-secondary" value="Effacer"  (click)="reset()"/> 
+    </form>
+    <input type="button" value="Supprimer" class="btn btn-info" (click)="onSupprimer(1)">
+    <input type="button" value="Modifier" class="btn btn-warning"  (click)="onModifier(3)">
+</div>

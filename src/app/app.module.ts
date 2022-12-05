@@ -20,7 +20,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { PanierComponent } from './components/panier/panier.component';
 import { LoginComponent } from './components/login/login.component';
 import { ListproduitchildComponent } from './components/listproduitchild/listproduitchild.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { AdminComponent } from './components/admin/admin.component';
+import { EtoilenomPipe } from './etoilenom.pipe';
+
+//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -43,6 +47,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     LoginComponent,
     ListproduitchildComponent,
 
+    AdminComponent,
+      EtoilenomPipe,
+
+
+
     
   ],
   imports: [
@@ -52,7 +61,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

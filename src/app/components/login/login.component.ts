@@ -12,12 +12,12 @@ import { User } from 'src/app/classe/user';
 export class LoginComponent implements OnInit {
   error:number=0;
   f!:FormGroup;
-  client!:User[];
+  //users!:User[];
 
   
 
 
-  constructor(private fb:FormBuilder,private login:AuthentificationService,private router:Router) { }
+  constructor(private fb:FormBuilder,private authservice:AuthentificationService,private router:Router) { }
 
 
 
@@ -36,6 +36,21 @@ export class LoginComponent implements OnInit {
       password:['', Validators.required],
     
     })
+  }
+  onSubmit(){
+    this.authservice.getUsers(this.f.value.username,this.f.value.password)
+    .subscribe(user => {
+      if(user.length==0){
+        this.authservice.valide=false;
+        alert("user ou mot de passe erroné");
+        this.f.reset();
+      }
+      else{
+        this.authservice.valide=true;
+        this.router.navigate(['admin']);
+      }
+    })
+ 
   }
 
 }
