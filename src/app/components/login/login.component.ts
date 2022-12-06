@@ -40,12 +40,12 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     this.authservice.getUsers(this.f.value.username,this.f.value.password).subscribe(user => {
       if(user.length==0){
-        this.authservice.valide==false;
-        alert("user ou mot de passe erroné");
+        this.authservice.valide=false;
+        alert("user ou mot de passe incorrect");
         this.f.reset();
       }
       else{
-        this.authservice.valide==true;
+        this.authservice.valide=true;
         this.router.navigate(['/admin']);
       }
     })
