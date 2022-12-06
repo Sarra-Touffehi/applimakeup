@@ -1,21 +1,6 @@
 {
   "produits": [
     {
-      "id": 1,
-      "nom": "MASCARA - GO Big XXL Volume WP",
-      "photo": "assets/produits/catrice/mascara1.png",
-      "photoMarque": "assets/marques/catrice.png",
-      "date_fabrication": 2022,
-      "date_fin": 2023,
-      "marque": "catrice",
-      "promo": false,
-      "type": "yeux",
-      "prix": 18.9,
-      "nouveau": false,
-      "bestS": false,
-      "stars": 4
-    },
-    {
       "id": 2,
       "nom": "MASCARA - GO Big XXL Volume",
       "photo": "assets/produits/catrice/mascara2.png",
@@ -32,18 +17,18 @@
     },
     {
       "id": 3,
-      "nom": "Palette Collection Beige",
-      "photo": "assets/produits/catrice/palette.png",
-      "photoMarque": "assets/marques/catrice.png",
-      "date_fabrication": 2022,
-      "date_fin": 2023,
-      "marque": "catrice",
-      "promo": true,
-      "type": "teint",
-      "prix": 20.9,
-      "nouveau": true,
-      "bestS": false,
-      "stars": 4
+      "nom": null,
+      "photo": null,
+      "photoMarque": null,
+      "date_fabrication": null,
+      "date_fin": null,
+      "marque": null,
+      "promo": null,
+      "type": null,
+      "prix": null,
+      "nouveau": null,
+      "bestS": null,
+      "stars": null
     },
     {
       "id": 4,
@@ -403,10 +388,7 @@
     {
       "username": "ADMIN",
       "password": "123456"
-      
     }
   ],
-  "commandes":[
-
-  ]
+  "commandes": []
 }
