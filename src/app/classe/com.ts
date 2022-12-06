@@ -1,3 +1,5 @@
 export class Com {
-    constructor(public com : string){}
+    constructor(
+        public com : string
+        ){}
 }

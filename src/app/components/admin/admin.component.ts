@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Produit } from 'src/app/classe/produit';
-import { ProduitService } from 'src/app/produit.service';
+//import { Produit } from 'src/app/classe/produit';
+import { Produit } from '../../classe/produit';
+import { ProduitService } from 'src/app/service/produit.service';
 
 @Component({
   selector: 'app-admin',

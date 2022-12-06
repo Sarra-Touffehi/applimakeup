@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Article } from '../classe/article';
 import { Produit } from '../classe/produit';
 
-const URL= 'http://localhost:3000/commandes';
+
 @Injectable({
   providedIn: 'root'
 })

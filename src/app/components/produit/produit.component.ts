@@ -23,21 +23,20 @@ produits!:Produit;
   constructor(private activatedRoute:ActivatedRoute ,private produitService:ProduitService,private fb:FormBuilder,private router:Router,private panierService:PanierService) { }
 
 
-  AjouterAuPanier(id:number){
-    //this.produitService.addProduit().subscribe (data => console.log(data));
+ 
 
 
-  }
-
-
-  ajouterCommentaire(id:number){
+  ajouterCommentaire(){
    let c=this.productForm.value['comm'];
     alert(c);
    // this.produitService.addCom(c).subscribe( data   => this.p.commentaire.push(c) );
    
-    this.produitService.addCom(c).subscribe(data => this.p.push(c));
-    this.com=c;
+    //this.produitService.addCom(c).subscribe(data => this.p.push(c));
+   // this.com=c;
+   this.produitService.addCom(c);
   }
+
+
 
   
     ngOnInit() {

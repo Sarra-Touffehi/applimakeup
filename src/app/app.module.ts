@@ -23,8 +23,10 @@ import { ListproduitchildComponent } from './components/listproduitchild/listpro
 
 import { AdminComponent } from './components/admin/admin.component';
 import { EtoilenomPipe } from './etoilenom.pipe';
+import { AdminModule } from './admin/admin.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-//import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 
 
@@ -33,7 +35,7 @@ import { EtoilenomPipe } from './etoilenom.pipe';
   declarations: [
     AppComponent,
     FooterComponent,
-   
+    AdminComponent,
     ProduitComponent,
     ListproduitComponent,
     PromoproductComponent,
@@ -46,9 +48,8 @@ import { EtoilenomPipe } from './etoilenom.pipe';
     PanierComponent,
     LoginComponent,
     ListproduitchildComponent,
-
-    AdminComponent,
-      EtoilenomPipe,
+    
+    EtoilenomPipe,
 
 
 
@@ -56,11 +57,15 @@ import { EtoilenomPipe } from './etoilenom.pipe';
   ],
   imports: [
     BrowserModule, 
+    AdminModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     NgbModule,
+   
+   
+
   ],
   providers: [],
   bootstrap: [AppComponent]

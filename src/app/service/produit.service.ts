@@ -2,12 +2,15 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Produit } from '../classe/produit';
+import { Com } from '../classe/com';
+import { Commentaire } from '../classe/commentaire';
 const URL = 'http://localhost:3000/produits';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProduitService {
+  Com:string[]=[];
 
   constructor(private http:HttpClient) { }
   
@@ -32,9 +35,16 @@ export class ProduitService {
    // commenter(s:string):Observable<string>{
    //   return this.http.post<string>(URL,s);
    // }
-    addCom(s:string):Observable<string>{
-      return this.http.post<string>(URL , s);
+   // addCom(s:string):Observable<string>{
+    //  return this.http.post<string>(URL , s);
+      //}
+
+      addCom(Com : string){
+        this.Com.push(Com);
       }
+      
+      
+     
 
 
 }
