@@ -33,7 +33,10 @@ produits!:Produit;
    
     //this.produitService.addCom(c).subscribe(data => this.p.push(c));
    // this.com=c;
-   this.produitService.addCom(c);
+   this.produitService.addCom(c).subscribe(data =>this.produits.commentaire?.push(c));
+ //  this.produitService.addCom(c);
+ 
+   this.com=c;
   }
 
 
@@ -57,6 +60,7 @@ produits!:Produit;
 
       ajouterAuPanier(qte:string){
         this.panierService.ajouterPanier(this.produits,Number(qte));
+        alert('Article ajouté au panier!');
           }
   }
 

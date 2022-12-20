@@ -61,7 +61,7 @@
                 <button class="btn btn-warning" (click)="ajouterCommentaire()" >Ajouter</button>
                 <div> 
                     <i class="fa-regular fa-comment-dots"></i>
-                     <div class="form-control"  > {{produits.commentaire|json}} </div>
+                     <div class="form-control"   formControlName="come"> {{produits.commentaire|json}} </div>
                    </div>
               </form>
                 </div>

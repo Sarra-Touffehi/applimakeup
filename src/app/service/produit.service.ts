@@ -28,6 +28,7 @@ export class ProduitService {
       }
       deleteProduit(id:number){
         return this.http.delete(URL+"/"+id);     }
+
      updateProduit (id:number,p:Produit):Observable<Produit>{
           return this.http.put<Produit>(`${URL}/${id}`,p);
         }
@@ -35,13 +36,13 @@ export class ProduitService {
    // commenter(s:string):Observable<string>{
    //   return this.http.post<string>(URL,s);
    // }
-   // addCom(s:string):Observable<string>{
-    //  return this.http.post<string>(URL , s);
-      //}
-
-      addCom(Com : string){
-        this.Com.push(Com);
+   addCom(s:string):Observable<string>{
+     return this.http.post<string>(URL , s);
       }
+
+  //    addCom(Com : string){
+   //     this.Com.push(Com);
+   //   }
       
       
      

@@ -18,5 +18,6 @@ export class ListproduitchildComponent implements OnInit {
 
   ajouterAuPanier(){
 this.panierService.ajouterPanier(this.pro,1);
+alert('Article ajouté au panier!');
   }
 }
